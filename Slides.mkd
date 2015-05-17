@@ -93,13 +93,39 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 	* Compiled software files
 	* Images
 	* Powerpoint, Word Docs, Excel spreadsheets
-* Large files can be stored outside of a respository, with a note within the repository pointing to them.
+* Some users choose to store large files outside of a respository, with a note within the repository pointing to where others can find them.
 	* See, e.g., GitHub's [Large File Storage](https://github.com/blog/1986-announcing-git-large-file-storage-lfs) system, or the [`git-media` extension](https://github.com/alebedev/git-media)
 * Only track a file if... <span class="fragment">it's changing, and you want to track the changes</span><span class="fragment">, and you want people with whom you share the repository to get a copy of it.</span>
 
 # Real-World Examples
 
 ## Code Editing
+
+* Cloning an Existing Repository  
+	[Qualtrics Graph Helper](https://github.com/publicus/qualtrics_graph_helper)
+* Starting a New Repository from Scratch
+
+## ![](images/github_screenshots/GitHub_Repo_Index_Page.png)
+
+## ![](images/github_screenshots/GitHub_Repo_Index_Page_with_Clone_URL_Highlighted.png)
+
+## ![](images/terminal_screenshots/blank_terminal.png)
+
+## ![](images/terminal_screenshots/terminal_before_git-clone.png)
+
+## ![](images/terminal_screenshots/terminal_after_git_clone.png)
+
+## ![](images/terminal_screenshots/git-log_command.png)
+
+## ![](images/terminal_screenshots/git-log_result.png)
+
+## ![](images/terminal_screenshots/git-log_result_hash_highlighted.png)
+
+## ![](images/terminal_screenshots/git-show_command.png)
+
+## ![](images/terminal_screenshots/git-show_result.png)
+
+##  
 
 ## Manuscript Writing
 
