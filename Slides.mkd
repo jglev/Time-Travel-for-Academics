@@ -47,6 +47,27 @@ This is my note.
 # Git
 
 TODO: Incorporate Caitlin's questions.
+TODO: Add a note on DVCS vs. Dropbox
+
+# Real-World Examples
+
+## Code Editing
+
+## Manuscript Writing
+
+## The Basic Workflow
+
+1. Make git aware of the files you want to track  
+	<span class="fragment">`git init`</span>
+	<span class="fragment">, `git add`</span>
+	<span class="fragment">, `git clone`</span>
+1. Take a snapshot ("commit") whenever you do something. Add a commit message.  
+	<span class="fragment">`git commit --message "I deleted the first part of the Introduction,`  
+	`but added new citations to the Literature Review."`</span>
+1. That's it!  
+	<span class="fragment">As needed, use `git log`</span>
+	<span class="fragment">, `git diff`</span>
+	<span class="fragment">, and `git checkout`</span>
 
 # The Command Line
 
@@ -80,5 +101,5 @@ TODO: Incorporate Caitlin's questions.
 
 ## `git pull`
 
-
+## Branches
 
