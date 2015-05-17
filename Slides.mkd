@@ -8,7 +8,10 @@
 
 This presentation is meant to be used with reveal.js (which you need to download and place in the same directory as these slides). The slides are generated with [Pandoc](http://pandoc.org/demo/example9/producing-slide-shows-with-pandoc.html):  
 
-pandoc -t dzslides -i -s Slides.mkd -o Slides_Build.html --slide-level 2 --css reveal.js/css/theme/white.css
+Rscript -e "library(knitr)" -e "knit('$presentation_base_directory/Slides.mkd', output='$presentation_base_directory)/markdown_build.mkd')"
+
+
+pandoc -t revealjs -i -s Slides.mkd -o Slides_Build.html --slide-level 2 --css reveal.js/css/theme/white.css --variable transition="fade"
 
 (-i is "incremental" mode for lists. --slide-level sets the header level that should trigger new slides)
 
@@ -21,6 +24,16 @@ The point of this talk is to...
 
 "Protect yourself from yourself" means to not have to worry about mistakes that you might make in the future, or about decisions (e.g., to delete something) that you made in the past.
 </div>
+
+## BASH TEST
+
+```{r echo = FALSE, eval = TRUE}
+Sys.setenv(presentation_base_directory = "/home/jacoblevernier/ownCloudDesktopSyncFolder/Documents/Files in Transit/Time_Travel_for_Academics_Git_Presentation") # Following http://yihui.name/knitr/demo/engines/, this is currently the only way to set variables that can be shared across non-R code chunks that are bash-based (for other engines, variables have to be written to files to be shared across code chunks, apparently).
+```
+
+```{bash echo = TRUE, eval = FALSE}
+ls -al "$presentation_base_directory"
+```
 
 ##  
 
@@ -125,7 +138,15 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 
 ## ![](images/terminal_screenshots/git-show_result.png)
 
-##  
+## Repository from Scratch
+
+<pre><code data-trim contenteditable>
+git init # Initialize the repository in your current directory
+
+ls -a # List everything in the current directory — there's now a folder called .git. This is where all of the repository's metadata is stored.
+
+
+</code></pre>
 
 ## Manuscript Writing
 
