@@ -8,7 +8,7 @@
 
 This presentation is meant to be used with reveal.js (which you need to download and place in the same directory as these slides). The slides are generated with [Pandoc](http://pandoc.org/demo/example9/producing-slide-shows-with-pandoc.html):  
 
-Rscript -e "library(knitr)" -e "knit('Slides.mkd', output='markdown_compiled_NOT_FOR_EDITING.mkd')"
+Rscript -e "library(knitr)" -e "knit('Slides.Rmd', output='markdown_compiled_NOT_FOR_EDITING.mkd')"
 
 pandoc -t revealjs -i -s markdown_compiled_NOT_FOR_EDITING.mkd -o Slides_Build.html --slide-level 2 --css reveal.js/css/theme/white.css --variable transition="fade"
 
@@ -31,7 +31,7 @@ Sys.setenv(presentation_base_directory = "/home/jacoblevernier/ownCloudDesktopSy
 ```
 
 ```{r list_files, echo = TRUE, eval = TRUE, engine='bash'}
-ls -al "$presentation_base_directory"
+ls -al
 ```
 
 ##  
