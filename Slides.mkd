@@ -56,9 +56,7 @@ Using **Google Docs** offers nice collaborative editing with versions, but if yo
 
 ![[GotCredit.com, CC-BY](https://www.flickr.com/photos/jakerust/16836495381/)](images/insurance_keyboard.jpg)
 
-## How it works
-
-##  
+## How it Works
 
 <div style="height:300px;">![](images/apple-logo-grey.png) ![](images/apple_time_machine_logo.png)</div>
 
@@ -66,10 +64,37 @@ Using **Google Docs** offers nice collaborative editing with versions, but if yo
 Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.html), Fair Use allows for the reuse of logos if the use is only for identification purposes (e.g., in a newspaper to identify the company the article is about).
 </div>
 
-##  
+* Distributed (shareable)
+* Only saves changes
+* You build a "logbook" of everything that's happened to the tracked files.
 
--how it plays (nice, or otherwise) with common file types — doc, ppt, xls, csv, txt, R. does it handle videos?
--which file types it is possible and/or easy to have version control
+## The Basic Workflow
+
+1. Make git aware of the files you want to track  
+	<span class="fragment">`git init` ("initialize"/start tracking a project)</span>
+	<span class="fragment">, `git add` (add to the list of files to track)</span>
+	<span class="fragment">, `git clone` (create a copy on your computer of someone else's project)</span>
+1. Take a snapshot ("commit") whenever you do something. Add a commit message.  
+	<span class="fragment">`git commit --message "I deleted the first part of the Introduction,`  
+	`but added new citations to the Literature Review."`</span>
+1. Do your work!  
+	<span class="fragment">As needed, use `git log` (view the logbook of all previous commits)</span>
+	<span class="fragment">, `git diff` (see exactly what changed between two commits)</span>
+	<span class="fragment">, and `git checkout` (roll back to a different commit, making the folder look exactly as it did at that point in time — you can always roll back forward later!)</span>
+
+## What to Track with Git
+
+* <span class="fragment highlight-green">Plain-text files</span>
+	* Text: .txt, [Markdown](https://daringfireball.net/projects/markdown/syntax), [RMarkdown](http://rmarkdown.rstudio.com/)
+	* Code: R, Python, SPSS syntax, etc.
+	* Data: csv, corpora, etc.
+* <span class="fragment highlight-red">Binary files</span>
+	* Videos
+	* Compiled software files
+	* Images
+	* Powerpoint, Word Docs, Excel spreadsheets
+* Only track a file if... <span class="fragment">it's changing, and you want to track the changes</span><span class="fragment">, and you want people with whom you share the repository to get a copy of it.</span>
+
 -permissions — possible to keep private or is it automatically public?
 -skills needed / learning curve— eg could freshman undergrad with not a lot of computer use expertise be able to learn it easily?
 -practicalities — how to download other people’s materials, how to upload our own
@@ -79,20 +104,6 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 ## Code Editing
 
 ## Manuscript Writing
-
-## The Basic Workflow
-
-1. Make git aware of the files you want to track  
-	<span class="fragment">`git init`</span>
-	<span class="fragment">, `git add`</span>
-	<span class="fragment">, `git clone`</span>
-1. Take a snapshot ("commit") whenever you do something. Add a commit message.  
-	<span class="fragment">`git commit --message "I deleted the first part of the Introduction,`  
-	`but added new citations to the Literature Review."`</span>
-1. Do your work!  
-	<span class="fragment">As needed, use `git log`</span>
-	<span class="fragment">, `git diff`</span>
-	<span class="fragment">, and `git checkout`</span>
 
 # The Command Line
 
