@@ -9,7 +9,7 @@ Test
 <div class="notes">
 This presentation is meant to be used with reveal.js (which you need to download and place in the same directory as these slides). The slides are generated with [Pandoc](http://pandoc.org/demo/example9/producing-slide-shows-with-pandoc.html):  
 
-pandoc -t dzslides -i -s Slides.mkd -o Slides_Build.html --slide-level 2
+pandoc -t dzslides -i -s Slides.mkd -o Slides_Build.html --slide-level 2 --css reveal.js/css/theme/white.css
 
 (-i is "incremental" mode for lists. --slide-level sets the header level that should trigger new slides)
 
@@ -25,24 +25,9 @@ pandoc -t dzslides -i -s Slides.mkd -o Slides_Build.html --slide-level 2
 
 Well...
 
-## And another slide
-
-* One
-* Two 
-* Three
-
-. . .
-
-And more
-
-<div class="notes">
-This is my note.
-
-- It can contain markdown
-- like this list
-
-</div>
-
+* <p class="fragment shrink">**Dropbox** *does* save limited versions of files, but doesn't allow two people to edit files at once, and doesn't show what was changed between different versions, or why.</p>
+* <p class="fragment shrink">Saving seperate versions of files (or passing around a **Word Document** makes it hard to sync files or keep track of which versions are based on which others.</p>
+* <p class="fragment shrink">Using **Google Docs** offers nice collaborative editing with versions, but if your internet connection is down, you have no or limited access to files. And while Docs are fine for writing manuscripts, they're not so good for editing code and analyses.</p>
 
 # Git
 
@@ -71,15 +56,15 @@ TODO: Add a note on DVCS vs. Dropbox
 
 # The Command Line
 
-The bare essentials you might need for working with Git:
+## The bare essentials you might need for working with Git
 
-* `ls` = LiSt files in a folder.
+* `ls` = **l**i**s**t files in a folder.
 * `cd` = "Change Directory"
 * `man [command]` = "Show me the manual for this command."
 	* For example, `man ls` will show and explain all of `ls`'s options.
 	* `ls -a` will show hidden files (like the `.git` directory!)
 	* `ls -l` will show the files in a list format (with each file on one line)
-* This slide is to help you use Git at a basic level. <span class="fragment highlight-blue">Do not use command-line commands that you don't know.</span> The command line doesn't ask "Are you sure?"
+* This slide is to help you use Git at a basic level. <span class="fragment highlight-red">Do not use command-line commands that you don't know.</span> The command line doesn't ask "Are you sure?"
 
 
 # GitEye
