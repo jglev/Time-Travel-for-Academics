@@ -4,12 +4,8 @@
 
 # Get your digital life in order, and protect yourself from yourself
 
-<div class="notes">
-The point of this talk is to...
-"Protect yourself from yourself" means to not have to worry about mistakes that you might make in the future, or about decisions (e.g., to delete something) that you made in the past.
-</div>
+<!--
 
-<div class="notes">
 This presentation is meant to be used with reveal.js (which you need to download and place in the same directory as these slides). The slides are generated with [Pandoc](http://pandoc.org/demo/example9/producing-slide-shows-with-pandoc.html):  
 
 pandoc -t dzslides -i -s Slides.mkd -o Slides_Build.html --slide-level 2 --css reveal.js/css/theme/white.css
@@ -18,6 +14,12 @@ pandoc -t dzslides -i -s Slides.mkd -o Slides_Build.html --slide-level 2 --css r
 
 (Note that per [here](https://github.com/jgm/pandoc-templates/pull/78), you may need to tempoararily change the css and js locations to not include ".min" in the name (or copy them and rename them with ".min").
 
+-->
+
+<div class="notes">
+The point of this talk is to...
+
+"Protect yourself from yourself" means to not have to worry about mistakes that you might make in the future, or about decisions (e.g., to delete something) that you made in the past.
 </div>
 
 ##  
@@ -98,6 +100,8 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 
 * `ls` = **l**i**s**t files in a folder.
 * `cd` = "Change Directory"
+	* `cd ./subfolder` = "Go into the folder called 'subfolder' in the current directory."
+	* `cd ../` = "Go one directory up."
 * `man [command]` = "Show me the manual for this command."
 	* For example, `man ls` will show and explain all of `ls`'s options.
 	* `ls -a` will show hidden files (like the `.git` directory!)
