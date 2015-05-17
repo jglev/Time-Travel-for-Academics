@@ -24,14 +24,8 @@ The point of this talk is to...
 "Protect yourself from yourself" means to not have to worry about mistakes that you might make in the future, or about decisions (e.g., to delete something) that you made in the past.
 </div>
 
-## BASH TEST
-
 ```{r set_variables, echo = FALSE, eval = TRUE}
 Sys.setenv(presentation_base_directory = "/home/jacoblevernier/ownCloudDesktopSyncFolder/Documents/Files in Transit/Time_Travel_for_Academics_Git_Presentation") # Following http://yihui.name/knitr/demo/engines/, this is currently the only way to set variables that can be shared across non-R code chunks that are bash-based (for other engines, variables have to be written to files to be shared across code chunks, apparently).
-```
-
-```{r list_files, echo = TRUE, eval = TRUE, engine='bash'}
-ls -al
 ```
 
 ##  
@@ -123,13 +117,33 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 
 ## ![](images/terminal_screenshots/blank_terminal.png)
 
+##  
+```{r remove_previously_cloned_repository_files, echo = FALSE, eval = TRUE, engine='bash'}
+# rm -rf ~/Downloads/qualtrics_graph_helper
+```
+
+```{r clone_repository, echo = TRUE, eval = TRUE, collapse = TRUE, engine='bash'}
+cd ~/Downloads
+git clone https://github.com/publicus/qualtrics_graph_helper.git
+```
 ## ![](images/terminal_screenshots/terminal_before_git-clone.png)
 
 ## ![](images/terminal_screenshots/terminal_after_git_clone.png)
 
+##  
+```{r git_log, echo = TRUE, eval = TRUE, engine='bash'}
+cd ~/Downloads/qualtrics_graph_helper
+git log
+```
+
 ## ![](images/terminal_screenshots/git-log_command.png)
 
 ## ![](images/terminal_screenshots/git-log_result.png)
+
+```{r git_show, echo = TRUE, eval = TRUE, engine='bash'}
+cd ~/Downloads/qualtrics_graph_helper
+git show 978dc28946
+```
 
 ## ![](images/terminal_screenshots/git-log_result_hash_highlighted.png)
 
@@ -139,13 +153,11 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 
 ## Repository from Scratch
 
-<pre><code data-trim contenteditable>
+```{r list_files, echo = TRUE, eval = FALSE, engine='bash'}
 git init # Initialize the repository in your current directory
 
 ls -a # List everything in the current directory — there's now a folder called .git. This is where all of the repository's metadata is stored.
-
-
-</code></pre>
+```
 
 ## Manuscript Writing
 
