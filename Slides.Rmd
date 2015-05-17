@@ -171,10 +171,53 @@ git show 978dc28946
 
 ## Repository from Scratch
 
-```{r list_files, echo = TRUE, eval = FALSE, engine='bash'}
+```{r git_create_repository_from_scratch, echo = TRUE, eval = TRUE, engine='bash'}
+# SET eval=TRUE when you want to set up the example from scratch.
+
+mkdir Git_Example_from_Scratch
+cd Git_Example_from_Scratch
 git init # Initialize the repository in your current directory
 
-ls -a # List everything in the current directory — there's now a folder called .git. This is where all of the repository's metadata is stored.
+echo -e "# This is an example R script. \nx = 2 + 2 \ny = x + 5" > Example1.R
+
+git add Example1.R
+git commit -m "Initial commit, adding a few lines to a new script."
+
+sed --in-place 's/example R script./example script for R./g' Example1.R
+echo -e "\nx + 3 # This should equal 4 + 3 = 8" >> Example1.R
+
+git commit -am "Changed comment line, and added an additional line of code."
+
+sed --in-place 's/= 8/= 7/g' Example1.R
+git commit -am "Realized that my addition was off in my previous code."
+
+git checkout -b "Exciting_New_Feature"
+
+echo -e "\n# Create a plot \nplot(1:10)" >> Example1.R
+git commit -am "Added a plot to the script."
+
+git checkout master
+echo -e "\nx + 2 # This should equal 4" >> Example1.R
+git commit -am "Added new line of code."
+
+sed --in-place 's/y = x + 5/y = x + 150/g' Example1.R
+git commit -am "Changed the code that defines the variable 'y'."
+
+#git checkout Exciting_New_Feature
+#echo -e "\n\n # Create a histogram \nhist(rnorm(100, 0, 1))"
+#git commit -am "Added a histogram."
+
+#git checkout master
+git merge Exciting_New_Feature
+
+# Because we modified the same file in the same places in both branches, we need to tell git to merge them together.
+git status
+#git add Example1.R
+#git commit # This concludes the merge
+```
+
+```{r git_add, echo = TRUE, eval = TRUE, engine='bash'}
+
 ```
 
 ## Manuscript Writing
