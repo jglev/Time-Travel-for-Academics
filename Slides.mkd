@@ -8,10 +8,9 @@
 
 This presentation is meant to be used with reveal.js (which you need to download and place in the same directory as these slides). The slides are generated with [Pandoc](http://pandoc.org/demo/example9/producing-slide-shows-with-pandoc.html):  
 
-Rscript -e "library(knitr)" -e "knit('$presentation_base_directory/Slides.mkd', output='$presentation_base_directory)/markdown_build.mkd')"
+Rscript -e "library(knitr)" -e "knit('Slides.mkd', output='markdown_compiled_NOT_FOR_EDITING.mkd')"
 
-
-pandoc -t revealjs -i -s Slides.mkd -o Slides_Build.html --slide-level 2 --css reveal.js/css/theme/white.css --variable transition="fade"
+pandoc -t revealjs -i -s markdown_compiled_NOT_FOR_EDITING.mkd -o Slides_Build.html --slide-level 2 --css reveal.js/css/theme/white.css --variable transition="fade"
 
 (-i is "incremental" mode for lists. --slide-level sets the header level that should trigger new slides)
 
@@ -27,11 +26,11 @@ The point of this talk is to...
 
 ## BASH TEST
 
-```{r echo = FALSE, eval = TRUE}
+```{r set_variables, echo = FALSE, eval = TRUE}
 Sys.setenv(presentation_base_directory = "/home/jacoblevernier/ownCloudDesktopSyncFolder/Documents/Files in Transit/Time_Travel_for_Academics_Git_Presentation") # Following http://yihui.name/knitr/demo/engines/, this is currently the only way to set variables that can be shared across non-R code chunks that are bash-based (for other engines, variables have to be written to files to be shared across code chunks, apparently).
 ```
 
-```{bash echo = TRUE, eval = FALSE}
+```{r list_files, echo = TRUE, eval = TRUE, engine='bash'}
 ls -al "$presentation_base_directory"
 ```
 
