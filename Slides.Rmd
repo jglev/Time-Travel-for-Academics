@@ -111,9 +111,13 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 	[Qualtrics Graph Helper](https://github.com/publicus/qualtrics_graph_helper)
 * Starting a New Repository from Scratch
 
-## ![](images/github_screenshots/GitHub_Repo_Index_Page.png)
+## `git clone`
 
-## ![](images/github_screenshots/GitHub_Repo_Index_Page_with_Clone_URL_Highlighted.png)
+![](images/github_screenshots/GitHub_Repo_Index_Page.png)
+
+## `git clone`
+
+![](images/github_screenshots/GitHub_Repo_Index_Page_with_Clone_URL_Highlighted.png)
 
 ## ![](images/terminal_screenshots/blank_terminal.png)
 
@@ -124,11 +128,15 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 
 ```{r clone_repository, echo = TRUE, eval = TRUE, collapse = TRUE, engine='bash'}
 cd ~/Downloads
-git clone https://github.com/publicus/qualtrics_graph_helper.git
+#git clone https://github.com/publicus/qualtrics_graph_helper.git
 ```
-## ![](images/terminal_screenshots/terminal_before_git-clone.png)
+## `git clone`
 
-## ![](images/terminal_screenshots/terminal_after_git_clone.png)
+![](images/terminal_screenshots/terminal_before_git-clone.png)
+
+## `git clone`
+
+![](images/terminal_screenshots/terminal_after_git_clone.png)
 
 ##  
 ```{r git_log, echo = TRUE, eval = TRUE, engine='bash'}
@@ -136,20 +144,30 @@ cd ~/Downloads/qualtrics_graph_helper
 git log
 ```
 
-## ![](images/terminal_screenshots/git-log_command.png)
+## `git log`
 
-## ![](images/terminal_screenshots/git-log_result.png)
+![](images/terminal_screenshots/git-log_command.png)
+
+## `git log`
+
+![](images/terminal_screenshots/git-log_result.png)
 
 ```{r git_show, echo = TRUE, eval = TRUE, engine='bash'}
 cd ~/Downloads/qualtrics_graph_helper
 git show 978dc28946
 ```
 
-## ![](images/terminal_screenshots/git-log_result_hash_highlighted.png)
+## `git log`
 
-## ![](images/terminal_screenshots/git-show_command.png)
+![](images/terminal_screenshots/git-log_result_hash_highlighted.png)
 
-## ![](images/terminal_screenshots/git-show_result.png)
+## `git show`
+
+![](images/terminal_screenshots/git-show_command.png)
+
+## `git show`
+
+![](images/terminal_screenshots/git-show_result.png)
 
 ## Repository from Scratch
 
