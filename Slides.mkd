@@ -93,11 +93,9 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 	* Compiled software files
 	* Images
 	* Powerpoint, Word Docs, Excel spreadsheets
+* Large files can be stored outside of a respository, with a note within the repository pointing to them.
+	* See, e.g., GitHub's [Large File Storage](https://github.com/blog/1986-announcing-git-large-file-storage-lfs) system, or the [`git-media` extension](https://github.com/alebedev/git-media)
 * Only track a file if... <span class="fragment">it's changing, and you want to track the changes</span><span class="fragment">, and you want people with whom you share the repository to get a copy of it.</span>
-
--permissions — possible to keep private or is it automatically public?
--skills needed / learning curve— eg could freshman undergrad with not a lot of computer use expertise be able to learn it easily?
--practicalities — how to download other people’s materials, how to upload our own
 
 # Real-World Examples
 
@@ -109,6 +107,7 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 
 ## The Bare Essentials
 
+* "Terminal" in Mac OSX and Linux. [Cygwin](https://www.cygwin.com/) in Windows (I haven't tested these command in the Windows Command Prompt, but I think that they should work there too).
 * `ls` = **l**i**s**t files in a folder.
 * `cd` = "Change Directory"
 	* `cd ./subfolder` = "Go into the folder called 'subfolder' in the current directory."
@@ -121,6 +120,11 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 
 
 # GitEye
+
+## 
+
+[GitEye](http://www.collab.net/downloads/giteye)
+
 
 ## `git init`
 
@@ -153,3 +157,10 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 ## Branches
 
 ## The Reference Log (`git reflog`)
+
+
+
+-permissions — possible to keep private or is it automatically public?
+-skills needed / learning curve— eg could freshman undergrad with not a lot of computer use expertise be able to learn it easily?
+-practicalities — how to download other people’s materials, how to upload our own
+
