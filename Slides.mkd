@@ -1,8 +1,10 @@
 % Time-Travel for Academics
-% Get your digital life in order, and protect yourself from yourself
 % Jacob Levernier
+% May 18, 2015
 
-# This is a test slideshow.
+# Get your digital life in order, and protect yourself from yourself
+
+Test
 
 <div class="notes">
 This presentation is meant to be used with reveal.js (which you need to download and place in the same directory as these slides). The slides are generated with [Pandoc](http://pandoc.org/demo/example9/producing-slide-shows-with-pandoc.html):  
@@ -12,11 +14,16 @@ pandoc -t dzslides -i -s Slides.mkd -o Slides_Build.html --slide-level 2
 (-i is "incremental" mode for lists. --slide-level sets the header level that should trigger new slides)
 
 (Note that per [here](https://github.com/jgm/pandoc-templates/pull/78), you may need to tempoararily change the css and js locations to not include ".min" in the name (or copy them and rename them with ".min").
+
 </div>
 
-## This should turn into a slide...
+##  
 
-...with some content.
+![[PHD Comics](http://www.phdcomics.com/comics/archive/phd101212s.gif)](images/phd_comics_version_control_101212s.gif)
+
+## What to do?
+
+Well...
 
 ## And another slide
 
@@ -35,3 +42,43 @@ This is my note.
 - like this list
 
 </div>
+
+
+# Git
+
+TODO: Incorporate Caitlin's questions.
+
+# The Command Line
+
+# GitEye
+
+## `git init`
+
+## `git status`
+
+## `git add`
+
+## `git commit -m "Reminder.."`
+
+## `git log`
+
+## `git checkout`
+
+## `git diff`
+
+# GitHub and Related Services
+
+## What is GitHub?
+
+* See also BitBucket
+
+## Public vs. Private
+
+## `git clone`
+
+## `git push`
+
+## `git pull`
+
+
+
