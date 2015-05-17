@@ -71,6 +71,17 @@ TODO: Add a note on DVCS vs. Dropbox
 
 # The Command Line
 
+The bare essentials you might need for working with Git:
+
+* `ls` = LiSt files in a folder.
+* `cd` = "Change Directory"
+* `man [command]` = "Show me the manual for this command."
+	* For example, `man ls` will show and explain all of `ls`'s options.
+	* `ls -a` will show hidden files (like the `.git` directory!)
+	* `ls -l` will show the files in a list format (with each file on one line)
+* This slide is to help you use Git at a basic level. <span class="fragment highlight-blue">Do not use command-line commands that you don't know.</span> The command line doesn't ask "Are you sure?"
+
+
 # GitEye
 
 ## `git init`
