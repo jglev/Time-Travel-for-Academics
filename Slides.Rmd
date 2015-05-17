@@ -215,11 +215,6 @@ git status
 #git add Example1.R
 #git commit # This concludes the merge
 ```
-
-```{r git_add, echo = TRUE, eval = TRUE, engine='bash'}
-
-```
-
 ## Manuscript Writing
 
 # The Command Line
@@ -269,17 +264,26 @@ git status
 
 ## `git clone`
 
-## `git push`
+## `git push` and `git pull`
 
-## `git pull`
+* Once you've cloned a repository, all it takes to add your changes to it is to <span style="display:inline-block;" class="fragment grow">**"push"**</span> your local changes up to the server, with `git push https://github.com/url_of_the_repository`
+* If you want to get what everyone else has been adding to the repository, you can <span style="display:inline-block;" class="fragment grow">**"pull"**</span> it down from the server, with `git pull` (Git should know where to pull it from automatically from when you cloned it).
 
 ## Branches
 
+* A git log is like a big trunk of a tree.
+* That tree can have branches.
+* "Branch" ≈ A hashtag given to a line of commits
+	* E.g., "New_Test_that_Might_Break_Everything"<span class="fragment">, "New_Feature"</span><span class="fragment">, "My_Part_of_the_Project"</span>
+
+## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot.png)
+
 ## The Reference Log (`git reflog`)
 
-
-
--permissions — possible to keep private or is it automatically public?
--skills needed / learning curve— eg could freshman undergrad with not a lot of computer use expertise be able to learn it easily?
--practicalities — how to download other people’s materials, how to upload our own
+* Is a log of every git command you run.
+* Exists on your local machine only, and is wiped after 60-90 days.
+* Useful if you mess up a merge, etc.
+* To reset as if you hadn't done a command, you can use `git reset [IDNumber]`
+	* `git reset --hard 627c93d` will revert back to ID 627c93d, deleting anything you haven't committed yet.
+	* `git reset --soft 627c93d` will revert back to ID 627c93d, keeping anything you haven't committed yet.
 
