@@ -4,7 +4,10 @@
 
 # Get your digital life in order, and protect yourself from yourself
 
-Test
+<div class="notes">
+The point of this talk is to...
+"Protect yourself from yourself" means to not have to worry about mistakes that you might make in the future, or about decisions (e.g., to delete something) that you made in the past.
+</div>
 
 <div class="notes">
 This presentation is meant to be used with reveal.js (which you need to download and place in the same directory as these slides). The slides are generated with [Pandoc](http://pandoc.org/demo/example9/producing-slide-shows-with-pandoc.html):  
@@ -25,14 +28,49 @@ pandoc -t dzslides -i -s Slides.mkd -o Slides_Build.html --slide-level 2 --css r
 
 Well...
 
-* <p class="fragment shrink">**Dropbox** *does* save limited versions of files, but doesn't allow two people to edit files at once, and doesn't show what was changed between different versions, or why.</p>
-* <p class="fragment shrink">Saving seperate versions of files (or passing around a **Word Document** makes it hard to sync files or keep track of which versions are based on which others.</p>
-* <p class="fragment shrink">Using **Google Docs** offers nice collaborative editing with versions, but if your internet connection is down, you have no or limited access to files. And while Docs are fine for writing manuscripts, they're not so good for editing code and analyses.</p>
+* **Dropbox** 
+	* <span class="fragment highlight-green">Saves (limited) versions of files</span>
+	* <span class="fragment highlight-red">No concurrent editing</span>
+	* <span class="fragment highlight-red">Doesn't show what was changed between different versions, or why</span>
+* **Word Documents**
+	* <span class="fragment highlight-red">Passing around a document makes it hard to sync files and to keep track of which versions are based on which others.</span>
+* **Google Docs**
+	* <span class="fragment highlight-green">Nice collaborative editing with versions</span>
+	* <span class="fragment highlight-green">Useful for writing manuscripts</span>
+	* <span class="fragment highlight-red">No/Limited offline access to files</span>
+	* <span class="fragment highlight-red">Not suited for editing code and analyses</span>
+
+<div class="notes">
+**Dropbox** *does* save limited versions of files, but doesn't allow two people to edit files at once, and doesn't show what was changed between different versions, or why.
+
+Saving seperate versions of files (or passing around a **Word Document** makes it hard to sync files or keep track of which versions are based on which others.
+
+Using **Google Docs** offers nice collaborative editing with versions, but if your internet connection is down, you have no or limited access to files. And while Docs are fine for writing manuscripts, they're not so good for editing code and analyses.
+</div>
 
 # Git
 
-TODO: Incorporate Caitlin's questions.
-TODO: Add a note on DVCS vs. Dropbox
+##  
+
+![[GotCredit.com, CC-BY](https://www.flickr.com/photos/jakerust/16836495381/)](images/insurance_keyboard.jpg)
+
+## How it works
+
+##  
+
+<div style="height:300px;">![](images/apple-logo-grey.png) ![](images/apple_time_machine_logo.png)</div>
+
+<div class="notes">
+Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.html), Fair Use allows for the reuse of logos if the use is only for identification purposes (e.g., in a newspaper to identify the company the article is about).
+</div>
+
+##  
+
+-how it plays (nice, or otherwise) with common file types — doc, ppt, xls, csv, txt, R. does it handle videos?
+-which file types it is possible and/or easy to have version control
+-permissions — possible to keep private or is it automatically public?
+-skills needed / learning curve— eg could freshman undergrad with not a lot of computer use expertise be able to learn it easily?
+-practicalities — how to download other people’s materials, how to upload our own
 
 # Real-World Examples
 
@@ -49,14 +87,14 @@ TODO: Add a note on DVCS vs. Dropbox
 1. Take a snapshot ("commit") whenever you do something. Add a commit message.  
 	<span class="fragment">`git commit --message "I deleted the first part of the Introduction,`  
 	`but added new citations to the Literature Review."`</span>
-1. That's it!  
+1. Do your work!  
 	<span class="fragment">As needed, use `git log`</span>
 	<span class="fragment">, `git diff`</span>
 	<span class="fragment">, and `git checkout`</span>
 
 # The Command Line
 
-## The bare essentials you might need for working with Git
+## The Bare Essentials
 
 * `ls` = **l**i**s**t files in a folder.
 * `cd` = "Change Directory"
@@ -75,7 +113,7 @@ TODO: Add a note on DVCS vs. Dropbox
 
 ## `git add`
 
-## `git commit -m "Reminder.."`
+## `git commit -m "Reminder..."`
 
 ## `git log`
 
@@ -99,3 +137,4 @@ TODO: Add a note on DVCS vs. Dropbox
 
 ## Branches
 
+## The Reference Log (`git reflog`)
