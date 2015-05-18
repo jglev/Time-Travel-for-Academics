@@ -179,33 +179,60 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 
 # GitEye
 
-## ![[GitEye](http://www.collab.net/downloads/giteye)](images/giteye_screenshots/GitEye_Initial_View.png)
+## GitEye
+
+![[GitEye](http://www.collab.net/downloads/giteye)](images/giteye_screenshots/GitEye_Initial_View.png)
+
+* See also `gitk`, `git-cola`, and several other tools. GitEye is the most straightforward I've found after quite a bit of looking.
 
 ## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_ID_Highlighted.png)
 
+GitEye's Commit Log ("History")
+
+## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Message_Highlighted.png)
+
+GitEye's Commit Log ("History")
+
+## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Author_Highlighted.png)
+
+GitEye's Commit Log ("History")
+
 ## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Commit1_Highlighted.png)
+
+GitEye's Commit Log ("History")
+
 ## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Commit2_Highlighted.png)
+
+GitEye's Commit Log ("History")
+
 ## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Commit3_Highlighted.png)
 
+GitEye's Commit Log ("History")
+
+## Branches
+
+* A git log is like a big trunk of a tree.
+* That tree can have branches.
+* "Branch" ≈ A hashtag given to a line of commits
+	* E.g., "New_Test_that_Might_Break_Everything"<span class="fragment">, "New_Feature"</span><span class="fragment">, "My_Part_of_the_Project"</span>
+
 ## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Branchpoint1_Highlighted.png)
+
+Branching (`git checkout -b NewBranchName`, `git checkout ExisitingBranchName`) 
+
 ## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Branchpoint2_Highlighted.png)
 
+Branching (`git checkout -b NewBranchName`, `git checkout ExisitingBranchName`) 
+
 ## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Mergepoint1_Highlighted.png)
+
+Merging (`git checkout MainBranchName; git merge`)
+
 ## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Mergepoint2_Highlighted.png)
 
-## `git init`
+Merging (`git checkout MainBranchName; git merge`)
 
-## `git status`
-
-## `git add`
-
-## `git commit -m "Reminder..."`
-
-## `git log`
-
-## `git checkout`
-
-## `git diff`
+## Comparing Files between Commits (`git diff`)
 
 # GitHub and Related Services
 
@@ -215,21 +242,14 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 
 ## Public vs. Private
 
-## `git clone`
+* GitHub: Public by default. Pay for private.
+* BitBucket: More allowance for private, but still based on pay-for-private model.
+* **Both have academic/student accounts that allow for unlimited private repositories.**
 
 ## `git push` and `git pull`
 
 * Once you've cloned a repository, all it takes to add your changes to it is to <span style="display:inline-block;" class="fragment grow">**"push"**</span> your local changes up to the server, with `git push https://github.com/url_of_the_repository`
 * If you want to get what everyone else has been adding to the repository, you can <span style="display:inline-block;" class="fragment grow">**"pull"**</span> it down from the server, with `git pull` (Git should know where to pull it from automatically from when you cloned it).
-
-## Branches
-
-* A git log is like a big trunk of a tree.
-* That tree can have branches.
-* "Branch" ≈ A hashtag given to a line of commits
-	* E.g., "New_Test_that_Might_Break_Everything"<span class="fragment">, "New_Feature"</span><span class="fragment">, "My_Part_of_the_Project"</span>
-
-## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot.png)
 
 ## The Reference Log (`git reflog`)
 
