@@ -78,15 +78,17 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 
 1. Make git aware of the files you want to track  
 	<span class="fragment">`git init` ("initialize"/start tracking a project)</span>
-	<span class="fragment">, `git add` (add to the list of files to track)</span>
-	<span class="fragment">, `git clone` (create a copy on your computer of someone else's project)</span>
+	<span class="fragment">, `git clone [url]` (create a copy on your computer of someone else's project)</span>
+	<span class="fragment">, `git add [filename]` (add to the list of files to track)</span>
+	* You use `git add [filename]` to get a file to be tracked in the first place. After that, whenever the file gets modified, you use `git add` to put it into the list of things to snapshot.
 1. Take a snapshot ("commit") whenever you do something. Add a commit message.  
 	<span class="fragment">`git commit --message "I deleted the first part of the Introduction,`  
 	`but added new citations to the Literature Review."`</span>
 1. Do your work!  
 	<span class="fragment">As needed, use `git log` (view the logbook of all previous commits)</span>
-	<span class="fragment">, `git diff` (see exactly what changed between two commits)</span>
-	<span class="fragment">, and `git checkout` (roll back to a different commit, making the folder look exactly as it did at that point in time — you can always roll back forward later!)</span>
+	<span class="fragment">, `git status` to see which files Git sees as having been changed since the last commit</span>
+	<span class="fragment">, `git diff [filename]` (see exactly what changed between two commits)</span>
+	<span class="fragment">, and `git checkout [id number]` (roll back to a different commit, making the folder look exactly as it did at that point in time — you can always roll forward later!)</span>
 
 ## What to Track with Git
 
@@ -119,17 +121,10 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 
 ![](images/github_screenshots/GitHub_Repo_Index_Page_with_Clone_URL_Highlighted.png)
 
-## ![](images/terminal_screenshots/blank_terminal.png)
+## `git clone`
 
-##  
-```{r remove_previously_cloned_repository_files, echo = FALSE, eval = TRUE, engine='bash'}
-# rm -rf ~/Downloads/qualtrics_graph_helper
-```
+![](images/terminal_screenshots/blank_terminal.png)
 
-```{r clone_repository, echo = TRUE, eval = TRUE, collapse = TRUE, engine='bash'}
-cd ~/Downloads
-#git clone https://github.com/publicus/qualtrics_graph_helper.git
-```
 ## `git clone`
 
 ![](images/terminal_screenshots/terminal_before_git-clone.png)
@@ -138,12 +133,6 @@ cd ~/Downloads
 
 ![](images/terminal_screenshots/terminal_after_git_clone.png)
 
-##  
-```{r git_log, echo = TRUE, eval = TRUE, engine='bash'}
-cd ~/Downloads/qualtrics_graph_helper
-git log
-```
-
 ## `git log`
 
 ![](images/terminal_screenshots/git-log_command.png)
@@ -151,11 +140,6 @@ git log
 ## `git log`
 
 ![](images/terminal_screenshots/git-log_result.png)
-
-```{r git_show, echo = TRUE, eval = TRUE, engine='bash'}
-cd ~/Downloads/qualtrics_graph_helper
-git show 978dc28946
-```
 
 ## `git log`
 
@@ -171,51 +155,11 @@ git show 978dc28946
 
 ## Repository from Scratch
 
-```{r git_create_repository_from_scratch, echo = TRUE, eval = TRUE, engine='bash'}
-# SET eval=TRUE when you want to set up the example from scratch.
-
-mkdir Git_Example_from_Scratch
-cd Git_Example_from_Scratch
-git init # Initialize the repository in your current directory
-
-echo -e "# This is an example R script. \nx = 2 + 2 \ny = x + 5" > Example1.R
-
-git add Example1.R
-git commit -m "Initial commit, adding a few lines to a new script."
-
-sed --in-place 's/example R script./example script for R./g' Example1.R
-echo -e "\nx + 3 # This should equal 4 + 3 = 8" >> Example1.R
-
-git commit -am "Changed comment line, and added an additional line of code."
-
-sed --in-place 's/= 8/= 7/g' Example1.R
-git commit -am "Realized that my addition was off in my previous code."
-
-git checkout -b "Exciting_New_Feature"
-
-echo -e "\n# Create a plot \nplot(1:10)" >> Example1.R
-git commit -am "Added a plot to the script."
-
-git checkout master
-echo -e "\nx + 2 # This should equal 4" >> Example1.R
-git commit -am "Added new line of code."
-
-sed --in-place 's/y = x + 5/y = x + 150/g' Example1.R
-git commit -am "Changed the code that defines the variable 'y'."
-
-#git checkout Exciting_New_Feature
-#echo -e "\n\n # Create a histogram \nhist(rnorm(100, 0, 1))"
-#git commit -am "Added a histogram."
-
-#git checkout master
-git merge Exciting_New_Feature
-
-# Because we modified the same file in the same places in both branches, we need to tell git to merge them together.
-git status
-#git add Example1.R
-#git commit # This concludes the merge
-```
 ## Manuscript Writing
+
+* Many writers use [Markdown](https://daringfireball.net/projects/markdown/syntax) and [RMarkdown](http://rmarkdown.rstudio.com/) to write.
+* See [Pandoc](http://pandoc.org/getting-started.html) for converting between txt, markdown, RMarkdown, etc. and PDF, Word Documents, etc.
+	* This is also built into programs like [RStudio](http://www.rstudio.com/)
 
 # The Command Line
 
@@ -235,10 +179,19 @@ git status
 
 # GitEye
 
-## 
+## ![[GitEye](http://www.collab.net/downloads/giteye)](images/giteye_screenshots/GitEye_Initial_View.png)
 
-[GitEye](http://www.collab.net/downloads/giteye)
+## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_ID_Highlighted.png)
 
+## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Commit1_Highlighted.png)
+## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Commit2_Highlighted.png)
+## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Commit3_Highlighted.png)
+
+## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Branchpoint1_Highlighted.png)
+## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Branchpoint2_Highlighted.png)
+
+## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Mergepoint1_Highlighted.png)
+## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Mergepoint2_Highlighted.png)
 
 ## `git init`
 
@@ -286,4 +239,6 @@ git status
 * To reset as if you hadn't done a command, you can use `git reset [IDNumber]`
 	* `git reset --hard 627c93d` will revert back to ID 627c93d, deleting anything you haven't committed yet.
 	* `git reset --soft 627c93d` will revert back to ID 627c93d, keeping anything you haven't committed yet.
+	* Using `git reset` will add a new entry to the Reference Log, so you can undo it, too! (Although you'd still lose any uncommitted changes)
+
 
