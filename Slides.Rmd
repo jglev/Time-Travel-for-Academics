@@ -237,11 +237,11 @@ Branching (`git checkout -b NewBranchName`, or `git checkout ExisitingBranchName
 
 ## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Mergepoint1_Highlighted.png)
 
-Merging (`git checkout MainBranchName; git merge`)
+Merging (`git checkout MainBranchName; git merge OtherBranchName`)
 
 ## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Mergepoint2_Highlighted.png)
 
-Merging (`git checkout MainBranchName; git merge`)
+Merging (`git checkout MainBranchName; git merge OtherBranchName`)
 
 ## Comparing Files between Commits (`git diff`)
 
