@@ -1,6 +1,11 @@
 % Time-Travel for Academics
-% Jacob Levernier
+% Jacob Levernier ([adunumdatum.org](http://adunumdatum.org))
 % May 18, 2015
+
+## This Presentation
+
+* The code is on [GitHub](https://github.com/publicus/Time-Travel-for-Academics)
+* A copy of the complete presentation is at [http://links.AdUnumDatum.org?time-travel-for-academics-2015-05-18](http://links.AdUnumDatum.org?time-travel-for-academics-2015-05-18)
 
 # Get your digital life in order, and protect yourself from yourself
 
@@ -11,6 +16,8 @@ This presentation is meant to be used with reveal.js (which you need to download
 Rscript -e "library(knitr)" -e "knit('Slides.Rmd', output='markdown_compiled_NOT_FOR_EDITING.mkd')"
 
 pandoc -t revealjs -i -s markdown_compiled_NOT_FOR_EDITING.mkd -o Slides_Build.html --slide-level 2 --css reveal.js/css/theme/white.css --variable transition="fade"
+
+You can add the --self-contained flag to pandoc to create a single file (with all images and linked css and javascript files encoded and embedded) for distribution.
 
 (-i is "incremental" mode for lists. --slide-level sets the header level that should trigger new slides)
 
