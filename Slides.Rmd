@@ -96,7 +96,7 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 	<span class="fragment">As needed, use `git log` (view the logbook of all previous commits),</span>  
 	<span class="fragment">`git status` to see which files Git sees as having been changed since the last commit,</span>  
 	<span class="fragment">`git diff [filename]` (see exactly what changed between two commits),</span>  
-	<span class="fragment">`git checkout [id number]` (roll back to a different commit, making the folder look exactly as it did at that point in time — you can always roll forward later!)</span>
+	<span class="fragment">`git checkout [id number]` (roll back to a different commit, making the folder look exactly as it did at that point in time — you can always roll forward later! (with `git checkout master` or `git checkout OtherBranchName`)</span>
 
 ## What to Track with Git
 
@@ -224,6 +224,8 @@ GitEye's Commit Log ("History")
 * That tree can have branches.
 * "Branch" ≈ A hashtag given to a line of commits
 	* E.g., "New_Test_that_Might_Break_Everything"<span class="fragment">, "New_Feature"</span><span class="fragment">, "My_Part_of_the_Project"</span>
+* `git branch` = See a list of available branches
+* `git checkout [branchname]` = Go to the top of the branch called "branchname"
 
 ## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Branchpoint1_Highlighted.png)
 
