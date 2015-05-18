@@ -227,11 +227,11 @@ GitEye's Commit Log ("History")
 
 ## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Branchpoint1_Highlighted.png)
 
-Branching (`git checkout -b NewBranchName`, `git checkout ExisitingBranchName`) 
+Branching (`git checkout -b NewBranchName`, or `git checkout ExisitingBranchName`) 
 
 ## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Branchpoint2_Highlighted.png)
 
-Branching (`git checkout -b NewBranchName`, `git checkout ExisitingBranchName`) 
+Branching (`git checkout -b NewBranchName`, or `git checkout ExisitingBranchName`) 
 
 ## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Mergepoint1_Highlighted.png)
 
@@ -269,5 +269,4 @@ Merging (`git checkout MainBranchName; git merge`)
 	* `git reset --hard 627c93d` will revert back to ID 627c93d, deleting anything you haven't committed yet.
 	* `git reset --soft 627c93d` will revert back to ID 627c93d, keeping anything you haven't committed yet.
 	* Using `git reset` will add a new entry to the Reference Log, so you can undo it, too! (Although you'd still lose any uncommitted changes)
-
 
