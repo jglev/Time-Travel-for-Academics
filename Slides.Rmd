@@ -85,18 +85,18 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 ## The Basic Workflow
 
 1. Make git aware of the files you want to track  
-	<span class="fragment">`git init` ("initialize"/start tracking a project)</span>
-	<span class="fragment">, `git clone [url]` (create a copy on your computer of someone else's project)</span>
-	<span class="fragment">, `git add [filename]` (add to the list of files to track)</span>
+	<span class="fragment">`git init` ("initialize"/start tracking a project),</span>  
+	<span class="fragment">`git clone [url]` (create a copy on your computer of someone else's project),</span>  
+	<span class="fragment">`git add [filename]` (add to the list of files to track)</span>
 	* You use `git add [filename]` to get a file to be tracked in the first place. After that, whenever the file gets modified, you use `git add` to put it into the list of things to snapshot.
 1. Take a snapshot ("commit") whenever you do something. Add a commit message.  
 	<span class="fragment">`git commit --message "I deleted the first part of the Introduction,`  
 	`but added new citations to the Literature Review."`</span>
 1. Do your work!  
-	<span class="fragment">As needed, use `git log` (view the logbook of all previous commits)</span>
-	<span class="fragment">, `git status` to see which files Git sees as having been changed since the last commit</span>
-	<span class="fragment">, `git diff [filename]` (see exactly what changed between two commits)</span>
-	<span class="fragment">, and `git checkout [id number]` (roll back to a different commit, making the folder look exactly as it did at that point in time — you can always roll forward later!)</span>
+	<span class="fragment">As needed, use `git log` (view the logbook of all previous commits),</span>  
+	<span class="fragment">`git status` to see which files Git sees as having been changed since the last commit,</span>  
+	<span class="fragment">`git diff [filename]` (see exactly what changed between two commits),</span>  
+	<span class="fragment">`git checkout [id number]` (roll back to a different commit, making the folder look exactly as it did at that point in time — you can always roll forward later!)</span>
 
 ## What to Track with Git
 
