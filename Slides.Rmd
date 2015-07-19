@@ -132,7 +132,7 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 
 ## The Bare Essentials
 
-* "Terminal" in Mac OSX and Linux. [Cygwin](https://www.cygwin.com/) in Windows (I haven't tested these command in the Windows Command Prompt, but I think that they should work there too).
+* "Terminal" in Mac OSX and Linux. [Cygwin](https://www.cygwin.com/) in Windows (I haven't tested these command in the Windows Command Prompt, but I think that they should work there too), or [Git for Windows](https://msysgit.github.io/).
 * `ls` = **l**i**s**t files in a folder.
 * `cd` = "Change Directory"
 	* `cd ./subfolder` = "Go into the folder called 'subfolder' in the current directory."
