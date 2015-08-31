@@ -1,10 +1,14 @@
+# Time Travel for Academics: Get your Digital Life in Order, and Protect Yourself from Yourself
+
 # Abstract
 
 If you've ever been working on a manuscript, statistical analysis, or notes on your reading, you might have started saving versions of your work with names like "Manuscript_good_3_a", "Manuscript_after_edits_good", "Manuscript_Use_This", and
-"Manuscript_Use_This_Final". Not only for your advisor or collaborators, but also for yourself a few months in the future, this approach to managing versions of your work can be confusing at best and misleading at worst, causing you to forget which version is the most up-to-date and, as a result, to re-do or lose work.
+"Manuscript_Use_This_Final". Not only for your advisor or collaborators, but also for yourself a few months in the future, this approach to managing versions of your work can be confusing at best and misleading at worst, causing you to forget which version is the most up-to-date and, as a result, to re-do or lose work. 
+
+In addition, files might become corrupted as you exchange versions with collaborators or as you upgrade your software, causing frustrating experiences in which once you find the right file from a project finished years prior, it can no longer be opened with the new version of a software package.
 
 "Version control" is a type of free software that you can use to manage your work -- not only to remember which versions are from when, but also to see exactly what you changed between versions, and why. Like a time machine, version control software lets you move back and forth between versions without clogging your hard drive with multiple copies of the same files.
 
-We will be discussing the "why" and "how" of using Git, a popular and free version control system that is also the foundation for GitHub, which software developers and academics alike are using to share and collaborate on their work.
+We will be discussing the "why" and "how" of using Git, a popular and free version control system that is also the foundation for GitHub, which software developers and academics alike are using to share and collaborate on their work. We will also introduce several tools that are enabled by using tools like Git, in which work can be reused for multiple purposes.
 
-This talk will use both the command-line (the Terminal app in Mac OSX and Linux, and Command Prompt or Cygwin (https://www.cygwin.com/) in Windows -- no experience assumed) and a point-and-click program called GitEye (http://www.collab.net/downloads/giteye).
+This talk will center on a free-for-noncommercial-use program called SmartGit (http://www.syntevo.com/smartgit/), which provides a simple point-and-click interface to Git. It will also use the command-line (the Terminal app in Mac OSX and Linux, and Command Prompt or Cygwin (https://www.cygwin.com/) in Windows -- no experience assumed).
