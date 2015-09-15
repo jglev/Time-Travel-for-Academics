@@ -2,6 +2,28 @@
 % Jacob Levernier ([adunumdatum.org](http://adunumdatum.org))
 % May 18, 2015
 
+<!--
+##########
+# TODO:
+##########
+
+* Add motivation slide.
+	* Why this is relevant (my own story, that this would have saved me a lot of time in my first year, etc.)
+		* (This doesn't necessarily need to be on a slide; I previously just explained this quickly while the current title slide was up.)
+		* Possibly a brief "Who am I" piece at the beginning.
+	* Two goals of the presentation:
+		1. Walk away with an immediately-applicable (and not overwhelming) new skill (using Git with the SmartGit GUI (and a word-wrapping diff viewer (Meld for Linux + KDiff3 for Windows + ___ for OSX), with enough knowledge to use the RefLog if necessary).
+		2. Walk away with interest in / knowledge of and excitement about other new skills and tools. These won't have demos, but will be discussed offhand, re: how they work in a real-world workflow:
+			* The command line more generally (searching files with grep, using hashtags, etc.)
+			* Regular Expressions (good for cleaning, getting a list of hashtags, etc.)
+			* RMarkdown (demonstrated with this presentation) (could even have a graph update itself with data about the audience in real-time upon re-compilation at the beginning of the session).
+* Add SmartGit initial setup screenshots and instructions.
+* Add SmartGit screenshots to replace most command-line screenshots (but not all)
+	* I *should* provide the CLI analog to each SmartGit feature, just in a sidebar or something, so that it's available (OR, use the Reveal.js vertical slides to have a potentially non-shown slide *under* each SmartGit slide that uses the current CLI slides).
+* Add offhand slides for the extra topics mentioned above.
+
+-->
+
 ## This Presentation
 
 * The code is on [GitHub](https://github.com/publicus/Time-Travel-for-Academics)
