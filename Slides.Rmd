@@ -12,7 +12,7 @@
 		* (This doesn't necessarily need to be on a slide; I previously just explained this quickly while the current title slide was up.)
 		* Possibly a brief "Who am I" piece at the beginning.
 	* Two goals of the presentation:
-		1. Walk away with an immediately-applicable (and not overwhelming) new skill (using Git with the SmartGit GUI (and a word-wrapping diff viewer (Meld for Linux + KDiff3 for Windows + ___ for OSX), with enough knowledge to use the RefLog if necessary).
+		1. Walk away with an immediately-applicable (and not overwhelming) new skill (using Git with the SmartGit GUI (and a word-wrapping diff viewer (Meld for Linux + KDiff3 for Windows and OSX (SourceForge has a 64bit .dmg available. In any case, I should make clear that an external diff viewer is OPTIONAL; I just like one because SmartGit doesn't allow linewrap.), with enough knowledge to use the RefLog if necessary).
 		2. Walk away with interest in / knowledge of and excitement about other new skills and tools. These won't have demos, but will be discussed offhand, re: how they work in a real-world workflow:
 			* The command line more generally (searching files with grep, using hashtags, etc.)
 			* Regular Expressions (good for cleaning, getting a list of hashtags, etc.)
