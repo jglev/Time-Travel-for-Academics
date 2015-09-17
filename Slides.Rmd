@@ -22,6 +22,12 @@
 	* I *should* provide the CLI analog to each SmartGit feature, just in a sidebar or something, so that it's available (OR, use the Reveal.js vertical slides to have a potentially non-shown slide *under* each SmartGit slide that uses the current CLI slides).
 * Add offhand slides for the extra topics mentioned above.
 
+* Explanations to add (or just be aware of as a presenter):
+	* Index vs. Head (if you click "Revert" in SmartGit, you may see this): Index = Changes at the moment of Staging; Head = Last commit/state on the current branch). See http://stackoverflow.com/a/3690522. https://git-scm.com/blog/2011/07/11/reset.html puts it as Head = "last commit snapshot", Index = "proposed next commit snapshot"
+	* git reset vs. git checkout: (quotes are from https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting/commit-level-operations)
+		* git reset: "On the commit-level, resetting is a way to move the tip of a branch to a different commit. This can be used to remove commits from the current branch."
+		* git checkout: "Internally, all the above command does is move HEAD to a different branch and update the working directory to match. Since this has the potential to overwrite local changes, Git forces you to commit or stash any changes in the working directory that will be lost during the checkout operation. Unlike git reset, git checkout doesn’t move any branches around."
+
 -->
 
 ## This Presentation
