@@ -123,7 +123,7 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 * We'll talk about both.
 * Git is fundamentally a command-line application.
 * Programs like SmartGit add a graphical interface.
-* **One take-home message of everything after this:** SmartGit can do everything that the command line can. But it's easier to learn about this with the command line.
+* **One take-home message of everything after this:** SmartGit can do (pretty much) everything that the command line can. But it's easier to learn about this in parallel with the command line.
 	(If you need to look up help later, it'll be useful to have heard the relevant command-line vocab terms)
 
 ## The Basic Workflow
