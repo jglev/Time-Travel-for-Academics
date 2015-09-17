@@ -234,7 +234,25 @@ Only track a file if... <span class="fragment">it's changing, and you want to tr
 * See [Pandoc](http://pandoc.org/getting-started.html) for converting between txt, markdown, RMarkdown, etc. and PDF, Word Documents, etc.
 	* This is also built into programs like [RStudio](http://www.rstudio.com/)
 
-# SmartGit
+# [SmartGit](http://www.syntevo.com/smartgit/)
+
+# SmartGit — Initial Setup
+
+##
+
+![Main Window menu customizations](images/smartgit_screenshots/smartgit_main_window_customize_menu.png)
+
+## Initial Setup
+
+![Log Window menu customizations](images/smartgit_screenshots/smartgit_log_window_customize_menu.png)
+
+## Initial Setup
+
+![Log Window — Click checkbox to see all branches](images/smartgit_screenshots/smartgit_log_window_show_all_branches.png)
+
+## SmartGit — External "Diff" Viewer
+
+![Optional — Set up a Diff viewer that allows word-/line-wrapping](images/smartgit_screenshots/smartgit_preferences_diff_tool_customize_menu.png)
 
 ## SmartGit
 
@@ -315,6 +333,7 @@ Merging (`git checkout MainBranchName; git merge OtherBranchName`)
 ## The Reference Log (`git reflog`)
 
 * Is a log of every git command you run.
+* Needs to be run from the command line (SmartGit doesn't have a full interface for the reflog).
 * Exists on your local machine only, and is wiped after 60-90 days.
 * Useful if you mess up a merge, etc.
 * To reset as if you hadn't done a command, you can use `git reset [IDNumber]`
