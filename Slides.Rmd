@@ -1,6 +1,6 @@
 % Time-Travel for Academics
 % Jacob Levernier ([adunumdatum.org](http://adunumdatum.org))
-% May 18, 2015
+% September 18, 2015
 
 <!--
 ##########
@@ -34,12 +34,12 @@
 ## This Presentation
 
 * The code is on [GitHub](https://github.com/publicus/Time-Travel-for-Academics)
-* A copy of the complete presentation is at [http://links.AdUnumDatum.org?time-travel-for-academics-2015-07-18](http://links.AdUnumDatum.org?time-travel-for-academics-2015-07-18)
+* A copy of the complete presentation is at [http://links.AdUnumDatum.org?time-travel-for-academics-2015-09-18](http://links.AdUnumDatum.org?time-travel-for-academics-2015-09-18)
 
 ## Goals
 
 1. Immediately-applicable skill with one new tool (**SmartGit**, supplemented with the command line)
-1. Excitement about (but not yet usable understandign of) other tools:
+1. Excitement about (but not yet usable understanding of) other tools:
 	* **RMarkdown**
 	* **The Unix Command Line**
 	* **Regular Expressions**
@@ -123,8 +123,9 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 * We'll talk about both.
 * Git is fundamentally a command-line application.
 * Programs like SmartGit add a graphical interface.
-* **One take-home message of everything after this:** SmartGit can do (pretty much) everything that the command line can. But it's easier to learn about this in parallel with the command line.
-	(If you need to look up help later, it'll be useful to have heard the relevant command-line vocab terms)
+* **One take-home message of everything after this:** SmartGit can do (pretty much) everything that the command line can.  
+<span class="fragment">We'll focus on GUI, but it's smartest to learn about this in parallel with the command line.  
+(If you need to look up help later, it'll be useful to have heard the relevant command-line vocab terms)</span>
 
 ## The Basic Workflow
 
@@ -155,7 +156,10 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 	* Powerpoint, Word Docs, Excel spreadsheets
 * Some users choose to store large files outside of a respository, with a note within the repository pointing to where others can find them.
 	* See, e.g., GitHub's [Large File Storage](https://github.com/blog/1986-announcing-git-large-file-storage-lfs) system, or the [`git-media` extension](https://github.com/alebedev/git-media)
-* Only track a file if... <span class="fragment">it's changing, and you want to track the changes</span><span class="fragment">, and you want people with whom you share the repository to get a copy of it.</span>
+
+## Thus...
+
+Only track a file if... <span class="fragment">it's changing, and you want to track the changes</span><span class="fragment">, and you want people with whom you share the repository to get a copy of it.</span>
 
 # Real-World Examples
 
@@ -293,13 +297,15 @@ Merging (`git checkout MainBranchName; git merge OtherBranchName`)
 
 ## What is GitHub?
 
-* See also BitBucket
+* See also [BitBucket](https://bitbucket.org/ 
+"BitBucket") and [GitLab](https://about.gitlab.com/ "GitLab")
 
 ## Public vs. Private
 
 * GitHub: Public by default. Pay for private.
 * BitBucket: More allowance for private, but still based on pay-for-private model.
-* **Both have academic/student accounts that allow for unlimited private repositories.**
+* GitLab: Free,	able to be hosted on-site. Can pay for support and extra features.
+* **Both GitHub and BitBucket have academic/student accounts that allow for unlimited private repositories.**
 
 ## `git push` and `git pull`
 
