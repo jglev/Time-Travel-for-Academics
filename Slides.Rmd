@@ -7,7 +7,7 @@
 # TODO:
 ##########
 
-* Add motivation slide.
+	* Add motivation slide.
 	* Why this is relevant (my own story, that this would have saved me a lot of time in my first year, etc.)
 		* (This doesn't necessarily need to be on a slide; I previously just explained this quickly while the current title slide was up.)
 		* Possibly a brief "Who am I" piece at the beginning.
@@ -27,13 +27,22 @@
 	* git reset vs. git checkout: (quotes are from https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting/commit-level-operations)
 		* git reset: "On the commit-level, resetting is a way to move the tip of a branch to a different commit. This can be used to remove commits from the current branch."
 		* git checkout: "Internally, all the above command does is move HEAD to a different branch and update the working directory to match. Since this has the potential to overwrite local changes, Git forces you to commit or stash any changes in the working directory that will be lost during the checkout operation. Unlike git reset, git checkout doesn’t move any branches around."
+* Update GitHub Code link to match branch for this specific presentation.
 
 -->
 
 ## This Presentation
 
 * The code is on [GitHub](https://github.com/publicus/Time-Travel-for-Academics)
-* A copy of the complete presentation is at [http://links.AdUnumDatum.org?time-travel-for-academics-2015-05-18](http://links.AdUnumDatum.org?time-travel-for-academics-2015-05-18)
+* A copy of the complete presentation is at [http://links.AdUnumDatum.org?time-travel-for-academics-2015-07-18](http://links.AdUnumDatum.org?time-travel-for-academics-2015-07-18)
+
+## Goals
+
+1. Immediately-applicable skill with one new tool (**SmartGit**, supplemented with the command line)
+1. Excitement about (but not yet usable understandign of) other tools:
+	* **RMarkdown**
+	* **The Unix Command Line**
+	* **Regular Expressions**
 
 # Get your digital life in order, and protect yourself from yourself
 
@@ -113,8 +122,8 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 
 * We'll talk about both.
 * Git is fundamentally a command-line application.
-* Programs like GitEye add a graphical interface.
-* **One take-home message of everything after this:** GitEye can do everything that the command line can. But it's easier to learn about this with the command line.
+* Programs like SmartGit add a graphical interface.
+* **One take-home message of everything after this:** SmartGit can do everything that the command line can. But it's easier to learn about this with the command line.
 	(If you need to look up help later, it'll be useful to have heard the relevant command-line vocab terms)
 
 ## The Basic Workflow
@@ -221,37 +230,37 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 * See [Pandoc](http://pandoc.org/getting-started.html) for converting between txt, markdown, RMarkdown, etc. and PDF, Word Documents, etc.
 	* This is also built into programs like [RStudio](http://www.rstudio.com/)
 
-# GitEye
+# SmartGit
 
-## GitEye
+## SmartGit
 
-![[GitEye](http://www.collab.net/downloads/giteye)](images/giteye_screenshots/GitEye_Initial_View.png)
+![[SmartGit](http://www.syntevo.com/smartgit/)](images/smartgit_screenshots/smartgit_Initial_View.png)
 
-* See also `gitk`, `git-cola`, and several other tools. GitEye is the most straightforward I've found after quite a bit of looking.
+* See also `GitEye`, `gitk`, `git-cola`, and several other tools. SmartGit is the most straightforward I've found after quite a bit of looking.
 
-## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_ID_Highlighted.png)
+## ![](images/smartgit_screenshots/smartgit_Branches_Example_Screenshot_ID_Highlighted.png)
 
-GitEye's Commit Log ("History")
+SmartGit's Commit Log ("History")
 
-## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Message_Highlighted.png)
+## ![](images/smartgit_screenshots/smartgit_Branches_Example_Screenshot_Message_Highlighted.png)
 
-GitEye's Commit Log ("History")
+SmartGit's Commit Log ("History")
 
-## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Author_Highlighted.png)
+## ![](images/smartgit_screenshots/smartgit_Branches_Example_Screenshot_Author_Highlighted.png)
 
-GitEye's Commit Log ("History")
+SmartGit's Commit Log ("History")
 
-## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Commit1_Highlighted.png)
+## ![](images/smartgit_screenshots/smartgit_Branches_Example_Screenshot_Commit1_Highlighted.png)
 
-GitEye's Commit Log ("History")
+SmartGit's Commit Log ("History")
 
-## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Commit2_Highlighted.png)
+## ![](images/smartgit_screenshots/smartgit_Branches_Example_Screenshot_Commit2_Highlighted.png)
 
-GitEye's Commit Log ("History")
+SmartGit's Commit Log ("History")
 
-## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Commit3_Highlighted.png)
+## ![](images/smartgit_screenshots/smartgit_Branches_Example_Screenshot_Commit3_Highlighted.png)
 
-GitEye's Commit Log ("History")
+SmartGit's Commit Log ("History")
 
 ## Branches
 
@@ -262,19 +271,19 @@ GitEye's Commit Log ("History")
 * `git branch` = See a list of available branches
 * `git checkout [branchname]` = Go to the top of the branch called "branchname"
 
-## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Branchpoint1_Highlighted.png)
+## ![](images/smartgit_screenshots/smartgit_Branches_Example_Screenshot_Branchpoint1_Highlighted.png)
 
 Branching (`git checkout -b NewBranchName`, or `git checkout ExisitingBranchName`) 
 
-## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Branchpoint2_Highlighted.png)
+## ![](images/smartgit_screenshots/smartgit_Branches_Example_Screenshot_Branchpoint2_Highlighted.png)
 
 Branching (`git checkout -b NewBranchName`, or `git checkout ExisitingBranchName`) 
 
-## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Mergepoint1_Highlighted.png)
+## ![](images/smartgit_screenshots/smartgit_Branches_Example_Screenshot_Mergepoint1_Highlighted.png)
 
 Merging (`git checkout MainBranchName; git merge OtherBranchName`)
 
-## ![](images/giteye_screenshots/GitEye_Branches_Example_Screenshot_Mergepoint2_Highlighted.png)
+## ![](images/smartgit_screenshots/smartgit_Branches_Example_Screenshot_Mergepoint2_Highlighted.png)
 
 Merging (`git checkout MainBranchName; git merge OtherBranchName`)
 
