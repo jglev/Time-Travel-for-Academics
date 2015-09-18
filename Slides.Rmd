@@ -2,18 +2,9 @@
 % Jacob Levernier ([adunumdatum.org](http://adunumdatum.org))
 % September 18, 2015
 
-<!--
-##########
-# TODO:
-##########
-
-* Update GitHub Code link to match branch for this specific presentation.
-
--->
-
 ## This Presentation
 
-* The code is on [GitHub](https://github.com/publicus/Time-Travel-for-Academics)
+* The code is on [GitHub](https://github.com/publicus/Time-Travel-for-Academics/releases/tag/University_of_San_Francisco_2015-09-18_Presentation)
 * A copy of the complete presentation is at [http://links.AdUnumDatum.org?time-travel-for-academics-2015-09-18](http://links.AdUnumDatum.org?time-travel-for-academics-2015-09-18)
 	* Choose 'o' for an overview of slides, 's' for the Presenter View and up/down and left/right to move between slides vertically and horizontally, respectively.
 
