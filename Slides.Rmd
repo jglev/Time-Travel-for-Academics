@@ -157,17 +157,49 @@ Note: Following [this site](http://smallbusiness.chron.com/fair-use-logos-2152.h
 * Some users choose to store large files outside of a respository, with a note within the repository pointing to where others can find them.
 	* See, e.g., GitHub's [Large File Storage](https://github.com/blog/1986-announcing-git-large-file-storage-lfs) system, or the [`git-media` extension](https://github.com/alebedev/git-media)
 
-## Thus...
+## Interlude: <span class="fragment highlight-green">Text</span>
 
-Only track a file if... <span class="fragment">it's changing, and you want to track the changes</span><span class="fragment">, and you want people with whom you share the repository to get a copy of it.</span>
+* Text works across platforms.
+* Especially through the Unix Command Line, text is searchable, combinable (able to be re-combined based on searches without changing the original text), and transmutable (able to be changed from format to format).
 
-# Real-World Examples
+<div class="notes">
+Examples: Go into my academic notes, and show searching using `grep`, inc. with --only-matching, --invert-match. Show writing that to a text file.
+</div>
 
-## Code Editing
+## Interlude: <span class="fragment highlight-green">Text</span>
 
-* Cloning an Existing Repository  
-	[Qualtrics Graph Helper](https://github.com/publicus/qualtrics_graph_helper)
-* Starting a New Repository from Scratch
+* Many text editors (such as [SublimeText](http://www.sublimetext.com/ "SublimeText 2") can search for *patterns* of text using "Regular Expressions"
+* This presentation is written in plain-text!  
+	* It uses a tool called [Pandoc](http://pandoc.org/ "Pandoc"), which can convert plain-text manuscripts into PDFs, .docx, .html, .epub, etc.). The text is written in [Markdown](http://rmarkdown.rstudio.com/ "Markdown")
+* With an R package called [Knitr](http://yihui.name/knitr "Knitr") (or with tools built-in to software like [R Studio](http://rstudio.com/ "R Studio")), presentations and manuscripts can contain code that auto-updates their charts and figures.
+
+<div class="notes">
+Examples: (No Regex example, as the command could be overwhelming even to see. Just talk about use-cases (e.g., cleaning phone number data).
+</div>
+
+## Interlude: Text
+
+```{r Embedded_Code_Example, echo=FALSE, eval=TRUE, fig.cap=""}
+
+data_to_process <- read.csv("Demographic_Data_of_Audience_Participants.csv")
+
+# Create a nice plot. For color palettes, see http://www.r-bloggers.com/color-palettes-in-r/
+
+barplot(
+  data_to_process$Number_of_People, # Bar heights
+  names.arg = data_to_process$Operating_System, # Labels
+  col = cm.colors(4), # Colors
+  main = NULL, # Main title
+  xlab = "Operating System", # X label
+  ylab = c("Number of people today,", format(Sys.Date(), format="%B %d, %Y")) # Y label.
+)
+
+```
+
+## A Review...
+
+* Anything can be tracked, but text files are best. 
+* Only track a file if... <span class="fragment">it's changing, and you want to track the changes</span><span class="fragment">, and you want people with whom you share the repository to get a copy of it.</span>
 
 # The Command Line
 
@@ -182,6 +214,9 @@ Only track a file if... <span class="fragment">it's changing, and you want to tr
 	* For example, `man ls` will show and explain all of `ls`'s options.
 	* `ls -a` will show hidden files (like the `.git` directory!)
 	* `ls -l` will show the files in a list format (with each file on one line)
+
+## The Bare Essentials
+
 * This slide is to help you use Git at a basic level. <span class="fragment highlight-red">Do not use command-line commands that you don't know.</span> The command line doesn't ask "Are you sure?"
 
 ## `git clone`
@@ -226,33 +261,23 @@ Only track a file if... <span class="fragment">it's changing, and you want to tr
 
 ![](images/terminal_screenshots/git-show_result.png)
 
-## Repository from Scratch
-
-## Manuscript Writing
-
-* Many writers use [Markdown](https://daringfireball.net/projects/markdown/syntax) and [RMarkdown](http://rmarkdown.rstudio.com/) to write.
-* See [Pandoc](http://pandoc.org/getting-started.html) for converting between txt, markdown, RMarkdown, etc. and PDF, Word Documents, etc.
-	* This is also built into programs like [RStudio](http://www.rstudio.com/)
-
-# [SmartGit](http://www.syntevo.com/smartgit/)
-
 # SmartGit — Initial Setup
 
 ##
 
 ![Main Window menu customizations](images/smartgit_screenshots/smartgit_main_window_customize_menu.png)
 
-## Initial Setup
+##
 
 ![Log Window menu customizations](images/smartgit_screenshots/smartgit_log_window_customize_menu.png)
 
-## Initial Setup
+##
 
 ![Log Window — Click checkbox to see all branches](images/smartgit_screenshots/smartgit_log_window_show_all_branches.png)
 
-## SmartGit — External "Diff" Viewer
+## 
 
-![Optional — Set up a Diff viewer that allows word-/line-wrapping](images/smartgit_screenshots/smartgit_preferences_diff_tool_customize_menu.png)
+![Optional — In Preferences, set up a Diff viewer that allows word-/line-wrapping](images/smartgit_screenshots/smartgit_preferences_diff_tool_customize_menu.png)
 
 ## SmartGit
 
