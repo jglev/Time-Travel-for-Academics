@@ -275,13 +275,9 @@ barplot(
 
 ![Log Window — Click checkbox to see all branches](images/smartgit_screenshots/smartgit_log_window_show_all_branches.png)
 
-## 
+## ![Optional — In Preferences, set up a Diff viewer that allows word-/line-wrapping](images/smartgit_screenshots/smartgit_preferences_diff_tool_customize_menu.png)
 
-![Optional — In Preferences, set up a Diff viewer that allows word-/line-wrapping](images/smartgit_screenshots/smartgit_preferences_diff_tool_customize_menu.png)
-
-## SmartGit
-
-![[SmartGit](http://www.syntevo.com/smartgit/)](images/smartgit_screenshots/smartgit_Initial_View.png)
+## ![Initial View](images/smartgit_screenshots/smartgit_Initial_View.png)
 
 * See also `GitEye`, `gitk`, `git-cola`, and several other tools. SmartGit is the most straightforward I've found after quite a bit of looking.
 
@@ -309,9 +305,21 @@ SmartGit's Commit Log ("History")
 
 SmartGit's Commit Log ("History")
 
+## ![](images/smartgit_screenshots/giteye_Staging_Area.png)
+
+Main view when files have been modified (`git status`)
+
+## ![](images/smartgit_screenshots/giteye_Staged_Changes.png)
+
+Staging Changes (`git add example.txt`, or `git add .` for all changed files)
+
+## ![](images/smartgit_screenshots/giteye_Commit_Dialog.png)
+
+Committing Changes (`git commit -m "Commit message goes here"`)
+
 ## Branches
 
-* A git log is like a big trunk of a tree.
+* By default, history in the `git log` is like the big trunk of a tree.
 * That tree can have branches.
 * "Branch" ≈ A hashtag given to a line of commits
 	* E.g., "New_Test_that_Might_Break_Everything"<span class="fragment">, "New_Feature"</span><span class="fragment">, "My_Part_of_the_Project"</span>
@@ -334,7 +342,11 @@ Merging (`git checkout MainBranchName; git merge OtherBranchName`)
 
 Merging (`git checkout MainBranchName; git merge OtherBranchName`)
 
-## Comparing Files between Commits (`git diff`)
+## Comparing Files between Commits 
+
+* Command line: `git diff example.txt`, `git diff commitID1 commitID2`
+* SmartGit: Right-click a file, (optionally after Ctrl+clicking two commits to select them both), and click "Show Changes"
+	* If only one commit is selected, SmartGit will show the changes from the previous commit.
 
 # GitHub and Related Services
 
